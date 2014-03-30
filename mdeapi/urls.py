@@ -1,12 +1,7 @@
 from django.conf.urls import patterns, include, url
-
-from django.contrib import admin
-admin.autodiscover()
+from api.views import parkHours, itineraryForDate
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'mdeapi.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^hours/(?P<year>\d{4})/(?P<month>\d{2})/(?P<date>\d+)/$', parkHours),
+    url(r'^date/(?P<year>\d{4})/(?P<month>\d{2})/(?P<date>\d+)/$', itineraryForDate),
 )
