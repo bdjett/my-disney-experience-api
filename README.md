@@ -2,44 +2,9 @@
 
 JSON API for MyDisneyExperience written using Python and the django framework with BeautifulSoup.
 
-##Notes
-
-This is not production ready and is not intended to be run on a production server for more than personal use due to security issues with handling the login information.
-
-Use on a private development server for personal use should be fine.
-
 ##Contributions
 
 Contributions are always appreciated. Feel free to fork.
-
-##Installation
-
-This project is written on the django framework in python and requires running your own server to retrieive your own data due to security issues and handling logins that I do not want to be responsible for.
-
-###Clone the Repo
-
-	git clone https://github.com/bdjett/my-disney-experience-api.git
-
-###Add Environment Variables
-
-If you are using a virtualenv, then add the following to the end of your bin/activate file. Otherwise, put them in your .bash_profile or similar.
-
-	DISNEY_USERNAME="[your username]"
-	DISNEY_PASSWORD="[your password]"
-	export DISNEY_USERNAME
-	export DISNEY_PASSWORD
-
-###Install Requirements
-
-Using pip install python requirements by running:
-
-	pip install -r requirements.txt
-
-###Run Server
-
-To get up and running quickly, use the development server. The development server should not be used for production and the code is not completed for production. This is only suitable for private use at the moment.
-
-	python manage.py runserver 0.0.0.0:8000
 
 ##Example Use
 
